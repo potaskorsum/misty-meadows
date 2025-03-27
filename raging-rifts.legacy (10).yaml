@@ -1,0 +1,1410 @@
+name: Raging Rifts
+properties:
+  title_stroke_color:
+    - 75
+    - 80
+    - 94
+    - 255
+  background_color:
+    - 75
+    - 80
+    - 94
+    - 150
+  friction: 0.75
+  pellet_multiplier: 2
+areas:
+  - x: 0
+    y: 0
+    zones:
+      - type: safe
+        properties:
+          minimum_speed: 10
+        x: 0
+        y: 0
+        width: 360
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 10
+            speed: 2
+            count: 12
+            types:
+              - charging
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 10
+            speed: 2
+            count: 14
+            types:
+              - charging
+          - radius: 12
+            speed: 5
+            count: 6
+            types:
+              - immune
+          - radius: 12
+            speed: 5
+            count: 12
+            types:
+              - wall
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 10
+            speed: 3
+            count: 16
+            types:
+              - charging
+          - radius: 12
+            speed: 6
+            count: 8
+            types:
+              - immune
+          - radius: 0
+            speed: 6
+            count: 8
+            effect_radius: 80
+            types:
+              - draining
+          - radius: 12
+            speed: 5
+            count: 12
+            types:
+              - wall
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 10
+            speed: 4
+            count: 16
+            types:
+              - charging
+          - radius: 12
+            speed: 7
+            count: 10
+            types:
+              - immune
+          - radius: 0
+            speed: 6
+            count: 10
+            effect_radius: 80
+            types:
+              - draining
+          - radius: 12
+            speed: 5
+            count: 12
+            types:
+              - wall
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 10
+            speed: 5
+            count: 8
+            types:
+              - charging
+          - radius: 12
+            speed: 8
+            count: 12
+            types:
+              - immune
+          - radius: 0
+            speed: 6
+            count: 12
+            effect_radius: 80
+            types:
+              - draining
+          - radius: 12
+            speed: 5
+            count: 12
+            types:
+              - wall
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 30
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: -30
+        width: 64
+        height: 300
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 300
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 300
+        spawner:
+          - radius: 20
+            speed: 5
+            count: 10
+            types:
+              - charging
+          - radius: 8
+            speed: 6
+            count: 30
+            types:
+              - immune
+          - radius: 32
+            speed: 4
+            count: 6
+            types:
+              - immune
+          - radius: 0
+            speed: 6
+            count: 18
+            effect_radius: 80
+            types:
+              - draining
+          - radius: 18
+            speed: 5
+            count: 12
+            types:
+              - wall
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: -30
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 30
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 5
+            count: 8
+            types:
+              - charging
+          - radius: 12
+            speed: 8
+            count: 10
+            types:
+              - immune
+          - radius: 2
+            speed: 10
+            count: 8
+            effect_radius: 40
+            types:
+              - freezing
+          - radius: 12
+            speed: 8
+            count: 12
+            effect_radius: 40
+            types:
+              - wall
+          - radius: 0
+            speed: 5
+            count: 12
+            effect_radius: 120
+            types:
+              - blocking
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 6
+            count: 6
+            types:
+              - charging
+          - radius: 12
+            speed: 8
+            count: 11
+            types:
+              - immune
+          - radius: 2
+            speed: 10
+            count: 8
+            effect_radius: 45
+            types:
+              - freezing
+          - radius: 12
+            speed: 8
+            count: 12
+            effect_radius: 40
+            types:
+              - wall
+          - radius: 0
+            speed: 5
+            count: 13
+            effect_radius: 120
+            types:
+              - blocking
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 7
+            count: 6
+            types:
+              - charging
+          - radius: 12
+            speed: 8
+            count: 12
+            types:
+              - immune
+          - radius: 2
+            speed: 11
+            count: 8
+            effect_radius: 50
+            types:
+              - freezing
+          - radius: 12
+            speed: 8
+            count: 12
+            effect_radius: 40
+            types:
+              - wall
+          - radius: 0
+            speed: 5
+            count: 14
+            effect_radius: 120
+            types:
+              - blocking
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 8
+            count: 6
+            types:
+              - charging
+          - radius: 12
+            speed: 8
+            count: 13
+            types:
+              - immune
+          - radius: 2
+            speed: 11
+            count: 8
+            effect_radius: 55
+            types:
+              - freezing
+          - radius: 12
+            speed: 8
+            count: 12
+            effect_radius: 40
+            types:
+              - wall
+          - radius: 0
+            speed: 5
+            count: 16
+            effect_radius: 120
+            types:
+              - blocking
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 9
+            count: 6
+            types:
+              - charging
+          - radius: 12
+            speed: 8
+            count: 14
+            types:
+              - immune
+          - radius: 2
+            speed: 12
+            count: 8
+            effect_radius: 60
+            types:
+              - freezing
+          - radius: 12
+            speed: 8
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 5
+            count: 17
+            effect_radius: 120
+            types:
+              - blocking
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: -60
+        width: 64
+        height: 360
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 360
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 360
+        spawner:
+          - radius: 12
+            speed: 7
+            count: 10
+            types:
+              - charging
+          - radius: 8
+            speed: 8
+            count: 20
+            types:
+              - immune
+          - radius: 2
+            speed: 15
+            count: 10
+            effect_radius: 60
+            types:
+              - freezing
+          - radius: 18
+            speed: 8
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 5
+            count: 20
+            effect_radius: 120
+            types:
+              - blocking
+          - radius: 40
+            speed: 10
+            count: 5
+            types:
+              - immune
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: -60
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 60
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 6
+            speed: 3
+            count: 20
+            types:
+              - charging
+          - radius: 15
+            speed: 5
+            count: 16
+            types:
+              - immune
+          - radius: 12
+            speed: 11
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 6
+            count: 12
+            types:
+              - slowing
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 6
+            speed: 3
+            count: 20
+            types:
+              - charging
+          - radius: 15
+            speed: 7
+            count: 16
+            types:
+              - immune
+          - radius: 12
+            speed: 11
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 6
+            count: 14
+            types:
+              - slowing
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 6
+            speed: 4
+            count: 25
+            types:
+              - charging
+          - radius: 15
+            speed: 7
+            count: 16
+            types:
+              - immune
+          - radius: 12
+            speed: 11
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 6
+            count: 16
+            types:
+              - slowing
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 6
+            speed: 4
+            count: 25
+            types:
+              - charging
+          - radius: 15
+            speed: 8
+            count: 16
+            types:
+              - immune
+          - radius: 12
+            speed: 11
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 6
+            count: 18
+            types:
+              - slowing
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 6
+            speed: 5
+            count: 25
+            types:
+              - charging
+          - radius: 15
+            speed: 9
+            count: 16
+            types:
+              - immune
+          - radius: 12
+            speed: 11
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 6
+            count: 20
+            types:
+              - slowing
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 60
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: -60
+        width: 64
+        height: 360
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 360
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 360
+        spawner:
+          - radius: 15
+            speed: 4
+            count: 40
+            types:
+              - charging
+          - radius: 15
+            speed: 9
+            count: 16
+            types:
+              - immune
+          - radius: 18
+            speed: 11
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 6
+            count: 20
+            types:
+              - slowing
+          - radius: 50
+            speed: 10
+            count: 6
+            types:
+              - immune
+          - radius: 30
+            speed: 6
+            count: 4
+            types:
+              - charging
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: -60
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 60
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 4
+            count: 20
+            types:
+              - charging
+          - radius: 15
+            speed: 6
+            count: 15
+            types:
+              - immune
+          - radius: 12
+            speed: 14
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 10
+            count: 10
+            types:
+              - disabling
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 4
+            count: 20
+            types:
+              - charging
+          - radius: 16
+            speed: 6
+            count: 15
+            types:
+              - immune
+          - radius: 12
+            speed: 14
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 11
+            count: 12
+            types:
+              - disabling
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 5
+            count: 20
+            types:
+              - charging
+          - radius: 17
+            speed: 6
+            count: 15
+            types:
+              - immune
+          - radius: 12
+            speed: 14
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 12
+            count: 14
+            types:
+              - disabling
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 5
+            count: 20
+            types:
+              - charging
+          - radius: 18
+            speed: 6
+            count: 15
+            types:
+              - immune
+          - radius: 12
+            speed: 14
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 13
+            count: 16
+            types:
+              - disabling
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 240
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 240
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 240
+        spawner:
+          - radius: 12
+            speed: 6
+            count: 20
+            types:
+              - charging
+          - radius: 19
+            speed: 6
+            count: 15
+            types:
+              - immune
+          - radius: 12
+            speed: 14
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 14
+            count: 18
+            types:
+              - disabling
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: -60
+        width: 64
+        height: 360
+      - type: safe
+        x: 64
+        y: 0
+        width: 256
+        height: 360
+      - type: active
+        x: last_right
+        y: 0
+        width: 3840
+        height: 360
+        spawner:
+          - radius: 12
+            speed: 8
+            count: 20
+            types:
+              - charging
+          - radius: 25
+            speed: 8
+            count: 30
+            types:
+              - immune
+          - radius: 12
+            speed: 14
+            count: 12
+            types:
+              - wall
+          - radius: 0
+            speed: 15
+            count: 30
+            types:
+              - disabling
+      - type: safe
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: exit
+        x: last_right
+        y: 0
+        translate:
+          x: 160
+          y: 0
+        width: 64
+        height: last_height
+  - x: last_right
+    y: 0
+    zones:
+      - type: exit
+        x: 0
+        y: 0
+        translate:
+          x: -160
+          y: 0
+        width: 64
+        height: 360
+      - type: victory
+        x: 64
+        y: 0
+        width: 256
+        height: 360
+      - type: victory
+        x: last_right
+        y: 0
+        width: 3840
+        height: 360
+      - type: victory
+        x: last_right
+        y: 0
+        width: 256
+        height: last_height
+      - type: removal
+        x: last_right
+        y: 0
+        width: 64
+        height: last_height
